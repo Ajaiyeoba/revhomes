@@ -35,19 +35,29 @@ function Footer() {
           </ul>
         </div>
         <div className="w-full md:w-1/3 ">
-          <h3 className="text-white text-lg font-bold mb-4 ">Subscribe to our NewsLetter</h3>
+          <h3 className="text-white text-lg font-bold mb-4 ">
+            Subscribe to our NewsLetter
+          </h3>
           <p className="text-gray-400 mt-4">
             {" "}
             Your go-to platform for finding the latest homes, rentals and
-            properties in your area. 
+            properties in your area.
           </p>
-          <div>
-            <input type="email" name="" id="" 
-            placeholder="Enter your Email"  className="p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:outline"/>
+          <div className="flex gap-2 ">
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter your Email"
+              className="p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:outline-none w-full md:w-auto"
+            />
+            <button className="py-2 px-4 rounded bg-blue-500 text-white">Subscribe</button>
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="border-t border-gray-700 py-4 mt-10 text-center text-gray-500">
+        <p>Copyright 2024 Nubiadev. All right Reserved</p>
+      </div>
     </div>
   );
 }

@@ -15,7 +15,7 @@ function Navbar() {
   }, [setOpenMenu]);
 
   return (
-    <div className="absolute top-0 left-0 w-full z-10">
+    <div className="absolute top-0 left-0 w-full z-10 bg-gray-900 ">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
         <h2 className="text-white flex">
           {" "}
@@ -27,7 +27,7 @@ function Navbar() {
             <p className="hover:text-gray-400 cursor-pointer">Home</p>
           </Link>
 
-          <Link>
+          <Link to="/about">
             <p className="hover:text-gray-400 cursor-pointer">About</p>
           </Link>
 
@@ -64,15 +64,15 @@ function Navbar() {
         </div>
 
         <ul className="flex flex-col  items-center gap-2 mt-5 px-5 text-lg font-medium  ">
-          <Link to="" onClick={() => setOpenMenu(false)}>
+          <Link to="/" onClick={() => setOpenMenu(false)}>
             <p className="px-4 py-2 rounded-full inline-block ">Home</p>
           </Link>
 
-          <Link onClick={() => setOpenMenu(false)}>
+          <Link to='/about' onClick={() => setOpenMenu(false)}>
             <p className="px-4 py-2 rounded-full inline-block ">About</p>
           </Link>
 
-          <Link onClick={() => setOpenMenu(false)}>
+          <Link to='/' onClick={() => setOpenMenu(false)}>
             <p className="px-4 py-2 rounded-full inline-block ">Properties</p>
           </Link>
 

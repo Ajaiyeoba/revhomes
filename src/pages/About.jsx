@@ -3,7 +3,7 @@ function About() {
   return (
     <div
       className="container flex flex-col items-center justify-center mx-auto p-14 mt-4 md:px-20 lg:px-32 w-full overflow-hidden "
-      id="about"  
+      id="about"
     >
       <h1 className="text-2xl sm:text-4xl font-poppins mb-2 ">
         About
@@ -11,7 +11,6 @@ function About() {
           Our Brand
         </span>{" "}
       </h1>
-
       <p className="text-gray-500 max-w-80 text-center mb-8 ">
         Passionate ABbout Properties{" "}
       </p>
