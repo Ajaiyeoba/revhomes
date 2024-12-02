@@ -60,7 +60,7 @@ function Projects() {
         >
           {projectData.map((project, index) => (
             <div
-              className="relatuve flex-shrink-0 w-full  sm:w-1/4"
+              className="relative flex-shrink-0 w-full  sm:w-1/4"
               key={index}
             >
               <img

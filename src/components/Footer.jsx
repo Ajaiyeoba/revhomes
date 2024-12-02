@@ -1,4 +1,10 @@
-import { HomeIcon } from "lucide-react";
+import {
+  HomeIcon,
+  FacebookIcon,
+  XIcon,
+  GithubIcon,
+  InstagramIcon,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
@@ -19,10 +25,10 @@ function Footer() {
         <div className="w-full md:w-1/5 mb-8 md:mb-0">
           <h3 className="text-white text-lg font-bold mb-4 ">Company</h3>
           <ul className="flex flex-col gap-2 text-gray-400">
-            <Link>
+            <Link to='/'>
               <p className="hover:text-white">Home</p>
             </Link>
-            <Link>
+            <Link to='/about'>
               <p className="hover:text-white">About</p>
             </Link>
             <Link>
@@ -51,8 +57,36 @@ function Footer() {
               placeholder="Enter your Email"
               className="p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:outline-none w-full md:w-auto"
             />
-            <button className="py-2 px-4 rounded bg-blue-500 text-white">Subscribe</button>
+            <button className="py-2 px-4 rounded bg-blue-500 text-white">
+              Subscribe
+            </button>
           </div>
+        </div>
+        <div className="w-full md:w-1/5 mb-8 md:mb-0">
+          <h3 className="text-white text-lg font-bold mb-4 ">
+            Connect On Socials
+          </h3>
+          <ul className="flex flex-col gap-2 text-gray-400">
+            <a href="www.github.com">
+              {" "}
+              <GithubIcon />
+            </a>
+
+            <a href="">
+              {" "}
+              <FacebookIcon />{" "}
+            </a>
+
+            <a href="">
+              {" "}
+              <InstagramIcon />
+            </a>
+
+            <a href="">
+              {" "}
+              <XIcon />
+            </a>
+          </ul>
         </div>
       </div>
       <div className="border-t border-gray-700 py-4 mt-10 text-center text-gray-500">

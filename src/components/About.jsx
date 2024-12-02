@@ -5,7 +5,7 @@ function About() {
       className="container flex flex-col items-center justify-center mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden "
       id="about"
     >
-      <h1 className="text-2xl sm:text-4xl font-poppins mb-2 ">
+      <h1 className="text-2xl sm:text-4xl font-poppins mb-2 text-gray-900 ">
         About                   
         <span className="underline underline-offset-4 decoration-1 under font-light ">
           Our Brand
@@ -13,7 +13,7 @@ function About() {
       </h1>
 
       <p className="text-gray-500 max-w-80 text-center mb-8 ">
-        Passionate ABbout Properties{" "}
+        Passionate About Properties{" "}
       </p>
 
       <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20 ">
