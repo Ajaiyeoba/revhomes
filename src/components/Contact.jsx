@@ -14,9 +14,7 @@ function Contact() {
       method: "POST",
       body: formData,
     });
-
     const data = await response.json();
-
     if (data.success) {
       setResult("");
       toast.success("Form Submitted Successfully")

@@ -1,7 +1,12 @@
 import brand from "../assets/hero.jpg";
+import { motion } from "framer-motion";
 function About() {
   return (
-    <div
+    <motion.div
+    initial={{ opacity: 0, x: 200 }}
+    transition={{ duration: 1 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
       className="container flex flex-col items-center justify-center mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden "
       id="about"
     >
@@ -50,7 +55,7 @@ function About() {
           <button className="bg-blue-600 text-white px-8 py-2 rounded">Learn More</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
