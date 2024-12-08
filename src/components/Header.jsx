@@ -19,15 +19,16 @@ function Header() {
           {" "}
           Discover Your Next Home, Right Around the Corner
         </h2>
-        <p>
+        <p className='font-poppins'> 
           Your go-to platform for finding the latest homes, rentals and
           properties in your area. Explore detailed listings, compare prices and
           make informed decisions all in one place.{" "}
         </p>
 
+
         <div className="space-x-6 mt-16 flex justify-center">
           <NavLink to="">
-            <p className="border border-white px-8 py-3 rounded"> Projects</p>
+            <p className="border border-white px-8 py-3 font-rubik rounded"> Projects</p>
           </NavLink>
           <NavLink>
             <p className="bg-blue-500 border-white px-8 py-3 rounded">

@@ -85,7 +85,7 @@ function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-auto mb-14": 
+                  className="w-full h-auto mb-14"
                 />
                 <div className="">
                   <div className="inline-block bg-white w-3/4 px-4 py-2 shadow-md">
