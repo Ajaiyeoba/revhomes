@@ -31,7 +31,7 @@ function Navbar() {
             <p className="hover:text-gray-400 cursor-pointer">About</p>
           </Link>
 
-          <Link>
+          <Link to='/property'>
             <p className="hover:text-gray-400 cursor-pointer">Properties</p>
           </Link>
 
@@ -72,7 +72,7 @@ function Navbar() {
             <p className="px-4 py-2 rounded-full inline-block ">About</p>
           </Link>
 
-          <Link to='/' onClick={() => setOpenMenu(false)}>
+          <Link to='/property' onClick={() => setOpenMenu(false)}>
             <p className="px-4 py-2 rounded-full inline-block ">Properties</p>
           </Link>
 
