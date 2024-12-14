@@ -10,8 +10,6 @@ export const assets ={
   modern,
   square
 }
-
-
 export const projectData = [
   {
     title: "Serenity Suites",
