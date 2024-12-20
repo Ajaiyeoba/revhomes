@@ -28,19 +28,17 @@ function Navbar() {
           </Link>
 
           <Link to="/about">
-            <p className="hover:text-gray-400 cursor-pointer">About</p>
+            <p className="hover:text-gray-400 cursor-pointer">Add Property</p>
           </Link>
 
           <Link to='/property'>
-            <p className="hover:text-gray-400 cursor-pointer">Properties</p>
+            <p className="hover:text-gray-400 cursor-pointer">List Property</p>
           </Link>
 
          
         </ul>
 
-        <button className="hidden md:block font-poppins bg-white px-8 py-2 rounded-full">
-          Admin
-        </button>
+       
 
         <MenuIcon
           className="md:hidden w-8 text-white"
@@ -63,11 +61,11 @@ function Navbar() {
           </Link>
 
           <Link to='/about' onClick={() => setOpenMenu(false)}>
-            <p className="px-4 py-2 rounded-full inline-block ">About</p>
+            <p className="px-4 py-2 rounded-full inline-block ">Add Property </p>
           </Link>
 
           <Link to='/property' onClick={() => setOpenMenu(false)}>
-            <p className="px-4 py-2 rounded-full inline-block ">Properties</p>
+            <p className="px-4 py-2 rounded-full inline-block ">List Property</p>
           </Link>
 
 
