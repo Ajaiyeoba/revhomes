@@ -38,6 +38,12 @@ function Footer() {
             <Link>
               <p className="hover:text-white">Privacy Policy</p>
             </Link>
+
+            <Link to='/admin'> 
+            <p className="hover:text-white">
+            Admin
+            </p>
+            </Link>
           </ul>
         </div>
         <div className="w-full md:w-1/3 font-poppins ">

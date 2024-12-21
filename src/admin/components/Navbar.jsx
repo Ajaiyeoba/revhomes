@@ -1,18 +1,7 @@
-import { HomeIcon, MenuIcon, XIcon } from "lucide-react";
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { HomeIcon } from "lucide-react";
+
 function Navbar() {
-  const [openMenu, setOpenMenu] = useState(false);
-  useEffect(() => {
-    if (setOpenMenu) {
-      document.body.overflow = "hidden";
-    } else {
-      document.body.overflow = "auto";
-    }
-    return () => {
-      document.body.overflow = "auto";
-    };
-  }, [setOpenMenu]);
+
 
   return (
     <div className="absolute top-0 left-0 w-full z-10 bg-gray-900 ">
@@ -22,57 +11,12 @@ function Navbar() {
           <HomeIcon className="text-blue-600" />
           revHomes
         </h2>
-        <ul className=" hidden md:flex gap-7 font-poppins text-white">
-          <Link to="/">
-            <p className="hover:text-gray-400 cursor-pointer">Home</p>
-          </Link>
+        <button
+          className='rounded-full px-5 py-2 sm:px-7 sm:py-2 text-gray-900 bg-white '>  Logout</button>
 
-          <Link to="/about">
-            <p className="hover:text-gray-400 cursor-pointer">Add Property</p>
-          </Link>
 
-          <Link to='/property'>
-            <p className="hover:text-gray-400 cursor-pointer">List Property</p>
-          </Link>
-
-         
-        </ul>
-
-       
-
-        <MenuIcon
-          className="md:hidden w-8 text-white"
-          onClick={() => setOpenMenu(true)}
-        />
       </div>
-      {/* Mobile Menu */}
-      <div
-        className={`md:hidden ${
-          openMenu ? "fixed w-full" : "h-0 w-0"
-        }   right-0 top-0 bottom-0 overflow-hidden bg-white transition-all `}
-      >
-        <div className="justify-end flex cursor-pointer p-6">
-          <XIcon className="w-8  " onClick={() => setOpenMenu(false)} />
-        </div>
 
-        <ul className="flex flex-col  items-center gap-2 mt-5 px-5 text-lg font-medium  ">
-          <Link to="/" onClick={() => setOpenMenu(false)}>
-            <p className="px-4 py-2 rounded-full inline-block ">Home</p>
-          </Link>
-
-          <Link to='/about' onClick={() => setOpenMenu(false)}>
-            <p className="px-4 py-2 rounded-full inline-block ">Add Property </p>
-          </Link>
-
-          <Link to='/property' onClick={() => setOpenMenu(false)}>
-            <p className="px-4 py-2 rounded-full inline-block ">List Property</p>
-          </Link>
-
-
-
-
-        </ul>
-      </div>
     </div>
   );
 }

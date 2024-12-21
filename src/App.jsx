@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Property from "./pages/Property";
 import AdminHome from './admin/pages/Home';
 import AddProperty from './admin/pages/AddProperty';
+import PropertyList from './admin/pages/PropertyList';
+
 function App() {
 
   const location = useLocation();
@@ -26,9 +28,11 @@ function App() {
         <Route path="/property" element={<Property />} />
 
         {/* Admin Routes */}
-
-        <Route path="/admin" element={<AdminHome />} />
-        <Route path='/add-property' element={<AddProperty />}/>
+{/* Wrapped Admin Route to work together dynamically */}
+        <Route path="/admin" element={<AdminHome />} >
+        <Route path='add-property' element={<AddProperty />}/>
+        <Route path="list-property" element={<PropertyList />}/>
+        </Route>
       </Routes>
 
       {!isAdminRoute && <Footer />}
