@@ -16,4 +16,4 @@ function Brands() {
   )
 }
 
-export default Bran
+export default Brands;
