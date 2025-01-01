@@ -37,9 +37,10 @@ function PropertyList() {
       <div className='space-y-2'>
         <h2 className="text-4xl font-semibold text-gray-900"> Check out the Property Listed </h2>
         <p className="mt-1 text-sm/6 text-gray-600 ">Listed Properties are either available for sale, lease, or rent</p>
-
-
-   
+     
+     
+     
+     
       </div>
     </div>
   )
